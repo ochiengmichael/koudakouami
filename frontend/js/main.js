@@ -61,25 +61,64 @@ navLinks.forEach((link) => {
 
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
+  contactForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const submitButton = contactForm.querySelector('button[type="submit"]');
-    const statusMessage = document.createElement('p');
-    statusMessage.className = 'form-status';
-    statusMessage.setAttribute('role', 'status');
-    statusMessage.textContent = 'Thanks. This demo form is front-end only for now and needs a real endpoint or email integration to send submissions.';
-
     const existingStatus = contactForm.querySelector('.form-status');
     if (existingStatus) {
       existingStatus.remove();
     }
 
-    contactForm.appendChild(statusMessage);
+    if (!submitButton) return;
 
-    if (submitButton) {
-      submitButton.textContent = 'Message Received';
-      submitButton.disabled = true;
+    const originalLabel = submitButton.textContent;
+    submitButton.textContent = 'Sending…';
+    submitButton.disabled = true;
+
+    const formData = new FormData(contactForm);
+    const payload = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('project-type'),
+      message: formData.get('message')
+    };
+
+    const statusMessage = document.createElement('p');
+    statusMessage.className = 'form-status';
+    statusMessage.setAttribute('role', 'status');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const responseBody = await response.text();
+      let result = {};
+
+      if (responseBody && response.headers.get('content-type')?.includes('application/json')) {
+        try {
+          result = JSON.parse(responseBody);
+        } catch {
+          result = {};
+        }
+      }
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'We could not send your message right now. Please try again or contact us by WhatsApp.');
+      }
+
+      statusMessage.textContent = 'Thanks — your message has been sent to our contact team.';
+      statusMessage.classList.add('is-success');
+      contactForm.reset();
+    } catch (error) {
+      statusMessage.textContent = error.message || 'Your message could not be sent. Please try again.';
+      statusMessage.classList.add('is-error');
+    } finally {
+      contactForm.appendChild(statusMessage);
+      submitButton.textContent = originalLabel;
+      submitButton.disabled = false;
     }
   });
 }
