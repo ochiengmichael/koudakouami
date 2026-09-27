@@ -22,7 +22,7 @@ app.use(express.static('.'));
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.EMAIL_USER || 'your-email@gmail.com',
+        user: process.env.EMAIL_USER || 'koudakouami@gmail.com',
         pass: process.env.EMAIL_PASS || 'your-app-password'
     }
 });
@@ -156,7 +156,7 @@ app.post('/api/contact', [
         // Send email notification
         const mailOptions = {
             from: email,
-            to: process.env.EMAIL_USER || 'info@kodakouami.com',
+            to: process.env.EMAIL_USER || 'koudakouami@gmail.com',
             subject: `New Contact Form Submission from ${name}`,
             html: `
                 <div style="font-family: Arial, sans-serif; padding: 20px; max-width: 600px;">
@@ -190,7 +190,7 @@ app.post('/api/contact', [
 
         // Send confirmation email to user
         const confirmationMailOptions = {
-            from: process.env.EMAIL_USER || 'info@kodakouami.com',
+            from: process.env.EMAIL_USER || 'koudakouami@gmail.com',
             to: email,
             subject: 'Thank you for contacting Kodak Ouami',
             html: `
@@ -242,7 +242,7 @@ app.post('/api/subscribe', [
     try {
         // Send subscription confirmation
         const mailOptions = {
-            from: process.env.EMAIL_USER || 'info@kodakouami.com',
+            from: process.env.EMAIL_USER || 'koudakouami@gmail.com',
             to: email,
             subject: 'Welcome to Kodak Ouami Newsletter!',
             html: `
@@ -279,7 +279,7 @@ app.get('/api/company', (req, res) => {
             name: 'Kodak Ouami',
             founded: '2024',
             founder: 'Michael Ochieng',
-            email: 'info@kodakouami.com',
+            email: 'koudakouami@gmail.com',
             phone: '+254712345678',
             whatsapp: '+254712345678',
             address: 'Kenya',
