@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title description">
+  <title id="title">People-first technology illustration</title>
+  <desc id="description">Abstract silhouettes around a shared digital workspace, using the brand palette.</desc>
+  <rect width="1200" height="720" fill="#171717"/>
+  <circle cx="252" cy="142" r="148" fill="#2d292a"/>
+  <circle cx="1000" cy="560" r="210" fill="#2d292a"/>
+  <rect x="292" y="144" width="616" height="412" rx="20" fill="#f5f3ef"/>
+  <rect x="292" y="144" width="616" height="62" rx="20" fill="#2d292a"/>
+  <circle cx="330" cy="175" r="7" fill="#F25623"/>
+  <circle cx="354" cy="175" r="7" fill="#a7a7a7"/>
+  <rect x="390" y="169" width="206" height="12" rx="6" fill="#f5f3ef" fill-opacity=".78"/>
+  <rect x="340" y="248" width="230" height="18" rx="8" fill="#171717"/>
+  <rect x="340" y="286" width="512" height="10" rx="5" fill="#a7a7a7"/>
+  <rect x="340" y="316" width="450" height="10" rx="5" fill="#a7a7a7" fill-opacity=".6"/>
+  <rect x="340" y="370" width="150" height="126" rx="10" fill="#2d292a"/>
+  <rect x="510" y="370" width="150" height="126" rx="10" fill="#F25623"/>
+  <rect x="680" y="370" width="172" height="126" rx="10" fill="#2d292a"/>
+  <circle cx="192" cy="462" r="46" fill="#a7a7a7"/>
+  <path d="M104 628C110 546 138 508 192 508C246 508 274 546 280 628Z" fill="#F25623"/>
+  <circle cx="1000" cy="368" r="52" fill="#a7a7a7"/>
+  <path d="M900 584C908 490 938 432 1000 432C1062 432 1092 490 1100 584Z" fill="#F25623"/>
+</svg>

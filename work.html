@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,14 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <!-- Favicon: Koudak Ouami Logo -->
     <link rel="icon" type="image/png" href="KOUDAKfavicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="KOUDAKfavicon.png" />
     <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#0B0B0B" />
+    <meta name="theme-color" content="#171717" />
     <link rel="stylesheet" href="frontend/css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
@@ -23,6 +22,9 @@
     <div class="page-shell">
       <header class="site-header">
         <div class="container nav-wrap">
+          <a href="index.html" class="brand brand-wordmark" aria-label="Koudak Ouami home">
+            <span class="brand-name">KOUDAK OUAMI</span>
+          </a>
           <nav class="main-nav" aria-label="Main navigation">
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -34,10 +36,8 @@
             </ul>
           </nav>
           <a href="contact.html" class="button button-primary nav-cta">Start a Project</a>
-          <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
+          <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
           </button>
         </div>
       </header>
@@ -71,7 +71,7 @@
                 <p class="project-tag">Business Solutions</p>
                 <h3>Atlas Operations</h3>
                 <p>Connected business operations platform for performance visibility and decision-making.</p>
-                <a href="case-study.html" class="text-link">View project</a>
+                <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </article>
 
@@ -81,7 +81,7 @@
                 <p class="project-tag">Digital Products</p>
                 <h3>Northstar</h3>
                 <p>Product design system for a growth-focused customer platform.</p>
-                <a href="case-study.html" class="text-link">View project</a>
+                <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </article>
 
@@ -91,7 +91,7 @@
                 <p class="project-tag">Automation</p>
                 <h3>PulseFlow</h3>
                 <p>Intelligent workflow automation for support and sales operations.</p>
-                <a href="case-study.html" class="text-link">View project</a>
+                <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </article>
 
@@ -101,7 +101,7 @@
                 <p class="project-tag">Creative Technology</p>
                 <h3>Signal House</h3>
                 <p>Immersive digital brand experience blending storytelling and product interaction.</p>
-                <a href="case-study.html" class="text-link">View project</a>
+                <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </article>
 
@@ -111,7 +111,7 @@
                 <p class="project-tag">Digital Products</p>
                 <h3>Harbor</h3>
                 <p>Client platform designed to simplify personal data and service management.</p>
-                <a href="case-study.html" class="text-link">View project</a>
+                <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </article>
 
@@ -121,20 +121,27 @@
                 <p class="project-tag">Business Solutions</p>
                 <h3>Kite Metrics</h3>
                 <p>Analytics layer for operational monitoring and strategic performance reporting.</p>
-                <a href="case-study.html" class="text-link">View project</a>
+                <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </article>
           </div>
         </section>
       </main>
       <footer class="site-footer">
-        <div class="container footer-grid">
+              <div class="container footer-callout">
+                <div>
+                  <p class="footer-eyebrow">HAVE A PROJECT IN MIND?</p>
+                  <h2>Letâ€™s build something that works for you.</h2>
+                </div>
+                <a href="contact.html" class="button button-primary footer-cta">Start a project</a>
+              </div>
+              <div class="container footer-grid">
           <div class="footer-brand">
             <div class="footer-logo-wrap">
             <img src="KOUDAKfavicon.png" alt="Koudak Ouami logo">
             </div>
             <div>
-              <!-- <h3>KOUDAK OUAMI</h3> -->
+              <h3>KOUDAK OUAMI</h3>
               <p>Digital products, automation and business technology.</p>
             </div>
           </div>
@@ -151,23 +158,28 @@
             <div>
               <h4>Connect</h4>
               <ul class="social-list">
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-                <li><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i>TikTok</a></li>
-                <li><a href="https://wa.me/254717652057?text=Hello%20Koudak%20Ouami%2C%20I%20want%20to%20chat%20with%20customer%20care." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
-                <li><a href="mailto:info@koudakouami.com" aria-label="Email"><i class="fa-solid fa-envelope"></i>info@koudakouami.com</a></li>
-                <li><a href="tel:+254717652057" aria-label="Phone"><i class="fa-solid fa-phone"></i>+254 717 652 057</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                <li><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok" aria-hidden="true"></i> TikTok</a></li>
+                <li><a href="https://wa.me/254717652057?text=Hello%20Koudak%20Ouami%2C%20I%20want%20to%20chat%20with%20customer%20care." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul class="footer-contact-list">
+                <li><a href="mailto:koudakouami@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> koudakouami@gmail.com</a></li>
+                <li><a href="tel:+254717652057"><i class="fa-solid fa-phone" aria-hidden="true"></i> +254 717 652 057</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="container footer-bottom">
-          <p>© Koudak Ouami. All rights reserved.</p>
-          <a href="contact.html" class="button button-secondary footer-cta">Start a Project</a>
+          <p>Â© Koudak Ouami. All rights reserved. <span class="photo-credit">Photography via <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash</a></span></p>
         </div>
       </footer>
     </div>
 
     <script src="frontend/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   </body>
 </html>
+
+

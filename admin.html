@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#171717" />
+    <title>Review moderation | Koudak Ouami</title>
+    <link rel="icon" type="image/png" href="KOUDAKfavicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend/css/styles.css" />
+  </head>
+  <body class="admin-page">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a href="index.html" class="brand brand-wordmark" aria-label="Koudak Ouami home">
+            <span class="brand-name">KOUDAK OUAMI</span>
+          </a>
+          <a href="index.html" class="admin-back-link">Return to website</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="admin-hero section-dark">
+          <div class="container admin-layout">
+            <div class="admin-intro">
+              <p class="eyebrow">PRIVATE WORKSPACE</p>
+              <h1>Review moderation</h1>
+              <p>Approve genuine client feedback before it appears on the public website.</p>
+            </div>
+
+            <form class="admin-login" id="admin-login">
+              <label for="admin-key">Admin access key</label>
+              <input id="admin-key" name="admin-key" type="password" autocomplete="current-password" required />
+              <button type="submit" class="button button-primary">Open moderation</button>
+              <p class="admin-status" id="admin-status" role="status"></p>
+            </form>
+
+            <section class="admin-reviews" id="admin-reviews" aria-live="polite" hidden>
+              <div class="admin-reviews-head">
+                <div>
+                  <p class="eyebrow">SUBMISSIONS</p>
+                  <h2>Review queue</h2>
+                </div>
+                <button class="button button-secondary" id="admin-refresh" type="button">Refresh</button>
+              </div>
+              <div class="admin-review-list" id="admin-review-list"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="frontend/js/admin.js"></script>
+  </body>
+</html>
+
+

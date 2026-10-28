@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KOUDAKOUAM</title>
-</head>
-<body>
-  
-</body>
-</html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,18 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="frontend/css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="frontend/css/styles.css" />
     <!-- Favicon: Koudak Ouami Logo -->
     <link rel="icon" type="image/png" href="KOUDAKfavicon.png" />
     <!-- <link rel="favicons/favicon-180*180.png" sizes="32*32" href="KOUDAKfavicon.png" /> -->
     <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#0B0B0B" />
+    <meta name="theme-color" content="#171717" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
         <div class="container nav-wrap">
+          <a href="index.html" class="brand brand-wordmark" aria-label="Koudak Ouami home">
+            <span class="brand-name">KOUDAK OUAMI</span>
+          </a>
+
           <nav class="main-nav" aria-label="Main navigation">
             <ul>
               <li><a href="index.html" class="active">Home</a></li>
@@ -43,21 +37,14 @@
 
           <a href="contact.html" class="button button-primary nav-cta">Start a Project</a>
 
-          <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
+          <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
           </button>
         </div>
       </header>
 
       <main>
         <section class="hero section-dark">
-          <div class="hero-geometry" aria-hidden="true">
-            <span class="orb orb-one"></span>
-            <span class="orb orb-two"></span>
-            <span class="grid-overlay"></span>
-          </div>
           <div class="container hero-inner">
             <div class="hero-copy reveal">
               <p class="eyebrow">Technology, made practical</p>
@@ -65,44 +52,20 @@
               <p class="hero-text">We design digital products, intelligent automations and business systems that make ambitious teams faster, clearer and ready to grow.</p>
               <div class="cta-row">
                 <a href="contact.html" class="button button-primary">Start a Project</a>
-                <a href="#solutions" class="button button-secondary">See what we build <span aria-hidden="true">↓</span></a>
+                <a href="#solutions" class="button button-secondary">See what we build <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
               </div>
               <div class="hero-proof" aria-label="Koudak Ouami capabilities">
                 <span>Strategy</span><span>Design</span><span>Engineering</span>
               </div>
             </div>
             <div class="hero-panel reveal">
-              <div class="dashboard-card card-surface">
-                <div class="panel-header">
-                  <span class="dot dot-orange"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                </div>
-                <div class="panel-body">
-                  <div class="mini-stat">
-                    <span class="label">Workflow efficiency</span>
-                    <strong>+64%</strong>
-                  </div>
-                  <div class="chart-bars" aria-hidden="true">
-                    <span style="height: 33%"></span>
-                    <span style="height: 58%"></span>
-                    <span style="height: 41%"></span>
-                    <span style="height: 82%"></span>
-                    <span style="height: 68%"></span>
-                    <span style="height: 100%"></span>
-                  </div>
-                  <div class="panel-footer">
-                    <div>
-                      <small>Automations</small>
-                      <strong>8 live</strong>
-                    </div>
-                    <div>
-                      <small>Delivery</small>
-                      <strong>3× faster</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <figure class="hero-photograph">
+                <img src="frontend/images/website-interface.jpg" alt="A developer workspace showing website designs, web application screens and code" />
+                <figcaption>
+                  <span>Websites, apps &amp; digital products</span>
+                  <span>Photo via <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash</a></span>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </section>
@@ -127,39 +90,31 @@
             <div class="service-grid">
               <article class="service-card reveal">
                 <span class="service-number">01</span>
-                <div class="service-icon" aria-hidden="true">
-                  <span class="icon-lines"></span>
-                </div>
+                <div class="service-icon service-mark" aria-hidden="true">AI</div>
                 <h3>AI &amp; Automation</h3>
                 <p>Intelligent automation, AI-powered workflows and systems that reduce repetitive work and improve efficiency.</p>
-                <a href="work.html" aria-label="Explore AI and automation solutions">→</a>
+                <a href="work.html" aria-label="View AI and automation work">View work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </article>
               <article class="service-card reveal">
                 <span class="service-number">02</span>
-                <div class="service-icon" aria-hidden="true">
-                  <span class="icon-grid"></span>
-                </div>
+                <div class="service-icon service-mark" aria-hidden="true">DP</div>
                 <h3>Digital Products</h3>
                 <p>Web platforms, applications and digital experiences designed around real user needs.</p>
-                <a href="work.html" aria-label="Explore digital products">→</a>
+                <a href="work.html" aria-label="View digital product work">View work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </article>
               <article class="service-card reveal">
                 <span class="service-number">03</span>
-                <div class="service-icon" aria-hidden="true">
-                  <span class="icon-forms"></span>
-                </div>
+                <div class="service-icon service-mark" aria-hidden="true">BT</div>
                 <h3>Business Technology</h3>
                 <p>Technology solutions that help organizations improve operations, customer experiences and decision-making.</p>
-                <a href="work.html" aria-label="Explore business technology solutions">→</a>
+                <a href="work.html" aria-label="View business technology work">View work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </article>
               <article class="service-card reveal">
                 <span class="service-number">04</span>
-                <div class="service-icon" aria-hidden="true">
-                  <span class="icon-shape"></span>
-                </div>
+                <div class="service-icon service-mark" aria-hidden="true">CT</div>
                 <h3>Creative Technology</h3>
                 <p>Brand experiences, interfaces and digital systems where technology meets creativity.</p>
-                <a href="work.html" aria-label="Explore creative technology solutions">→</a>
+                <a href="work.html" aria-label="View creative technology work">View work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </article>
             </div>
           </div>
@@ -181,7 +136,7 @@
                     <li>Node.js</li>
                     <li>API Integrations</li>
                   </ul>
-                  <a href="case-study.html" class="text-link">View project</a>
+                  <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="project-visual visual-one" aria-hidden="true">
                   <span class="floating-window"></span>
@@ -193,7 +148,7 @@
                   <p class="project-tag">Digital Products</p>
                   <h3>Northstar</h3>
                   <p>Customer-facing product experience built to simplify onboarding and increase retention.</p>
-                  <a href="case-study.html" class="text-link">View project</a>
+                  <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="project-visual visual-two" aria-hidden="true"></div>
               </article>
@@ -203,7 +158,7 @@
                   <p class="project-tag">Automation</p>
                   <h3>PulseFlow</h3>
                   <p>Operational automation for sales and support teams, reducing noise and manual follow-up.</p>
-                  <a href="case-study.html" class="text-link">View project</a>
+                  <a href="case-study.html" class="text-link">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="project-visual visual-three" aria-hidden="true"></div>
               </article>
@@ -240,7 +195,6 @@
               </article>
             </div>
             <figure class="philosophy-visual reveal">
-              <div class="philosophy-art" aria-hidden="true"><span></span><span></span><span></span></div>
               <figcaption>Practical thinking, collaborative delivery and technology built for progress.</figcaption>
             </figure>
           </div>
@@ -280,6 +234,75 @@
           </div>
         </section>
 
+        <section class="reviews section-light" aria-labelledby="reviews-heading">
+          <div class="container reviews-wrap">
+            <div class="section-head reveal">
+              <p class="eyebrow eyebrow-dark">CLIENT REVIEWS</p>
+              <h2 id="reviews-heading">What clients say after working with us.</h2>
+            </div>
+            <div class="reviews-summary reveal">
+              <div class="review-stats">
+                <strong id="review-average">0.0</strong>
+                <div class="stars" aria-label="Average rating">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <span id="review-count">0 public reviews</span>
+              </div>
+            </div>
+            <div class="review-layout">
+              <form class="review-form reveal" id="review-form" novalidate>
+                <h3>Share your experience</h3>
+                <div class="field-row two-col">
+                  <label>
+                    <span>Display name</span>
+                    <input type="text" name="name" placeholder="Your name" maxlength="80" required />
+                  </label>
+                  <label>
+                    <span>Service received</span>
+                    <select name="service">
+                      <option value="">Choose a service</option>
+                      <option>Web Development</option>
+                      <option>System Development</option>
+                      <option>Networking</option>
+                      <option>AI &amp; Automation</option>
+                      <option>Brand &amp; Product Design</option>
+                    </select>
+                  </label>
+                </div>
+
+                <fieldset class="rating-field">
+                  <legend>Your rating</legend>
+                  <div class="star-picker" aria-label="Select a rating">
+                    <input type="radio" name="rating" value="5" id="review-5" checked />
+                    <label for="review-5" aria-label="Five stars"><i class="fa-solid fa-star" aria-hidden="true"></i></label>
+                    <input type="radio" name="rating" value="4" id="review-4" />
+                    <label for="review-4" aria-label="Four stars"><i class="fa-solid fa-star" aria-hidden="true"></i></label>
+                    <input type="radio" name="rating" value="3" id="review-3" />
+                    <label for="review-3" aria-label="Three stars"><i class="fa-solid fa-star" aria-hidden="true"></i></label>
+                    <input type="radio" name="rating" value="2" id="review-2" />
+                    <label for="review-2" aria-label="Two stars"><i class="fa-solid fa-star" aria-hidden="true"></i></label>
+                    <input type="radio" name="rating" value="1" id="review-1" />
+                    <label for="review-1" aria-label="One star"><i class="fa-solid fa-star" aria-hidden="true"></i></label>
+                  </div>
+                </fieldset>
+
+                <label>
+                  <span>Your review</span>
+                  <textarea name="text" rows="5" maxlength="500" placeholder="Tell us about your experience working with Koudak Ouami." required></textarea>
+                </label>
+
+                <button type="submit" class="button button-primary">Submit review</button>
+              </form>
+
+              <div class="review-list reveal" id="review-list" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
         <section class="technology section-dark">
           <div class="container technology-wrap">
             <div class="section-head reveal">
@@ -288,32 +311,39 @@
             <div class="stack-grid">
               <article class="stack-card reveal">
                 <h3>Web</h3>
-                <p>HTML · CSS · JavaScript · Node.js</p>
+                <p>HTML Â· CSS Â· JavaScript Â· Node.js</p>
               </article>
               <article class="stack-card reveal">
                 <h3>Data</h3>
-                <p>MySQL · APIs · Cloud infrastructure</p>
+                <p>MySQL Â· APIs Â· Cloud infrastructure</p>
               </article>
               <article class="stack-card reveal">
                 <h3>Automation</h3>
-                <p>AI · Workflow automation · Integrations</p>
+                <p>AI Â· Workflow automation Â· Integrations</p>
               </article>
               <article class="stack-card reveal">
                 <h3>Infrastructure</h3>
-                <p>Servers · Security · Deployment</p>
+                <p>Servers Â· Security Â· Deployment</p>
               </article>
             </div>
           </div>
         </section>
       </main>
 <footer class="site-footer">
+        <div class="container footer-callout">
+          <div>
+            <p class="footer-eyebrow">HAVE A PROJECT IN MIND?</p>
+            <h2>Letâ€™s build something that works for you.</h2>
+          </div>
+          <a href="contact.html" class="button button-primary footer-cta">Start a project</a>
+        </div>
         <div class="container footer-grid">
           <div class="footer-brand">
             <div class="footer-logo-wrap">
             <img src="KOUDAKfavicon.png" alt="Koudak Ouami logo">
             </div>
             <div>
-              <!-- <h3>KOUDAK OUAMI</h3> -->
+              <h3>KOUDAK OUAMI</h3>
               <p>Digital products, automation and business technology.</p>
             </div>
           </div>
@@ -330,23 +360,28 @@
             <div>
               <h4>Connect</h4>
               <ul class="social-list">
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-                <li><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i>TikTok</a></li>
-                <li><a href="https://wa.me/254717652057?text=Hello%20Koudak%20Ouami%2C%20I%20want%20to%20chat%20with%20customer%20care." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
-                <li><a href="mailto:koudakouami@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i>koudakouami@gmail.com</a></li>
-                <li><a href="tel:+254717652057" aria-label="Phone"><i class="fa-solid fa-phone"></i>+254 717 652 057</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                <li><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok" aria-hidden="true"></i> TikTok</a></li>
+                <li><a href="https://wa.me/254717652057?text=Hello%20Koudak%20Ouami%2C%20I%20want%20to%20chat%20with%20customer%20care." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul class="footer-contact-list">
+                <li><a href="mailto:koudakouami@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> koudakouami@gmail.com</a></li>
+                <li><a href="tel:+254717652057"><i class="fa-solid fa-phone" aria-hidden="true"></i> +254 717 652 057</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="container footer-bottom">
-          <p>© Koudak Ouami. All rights reserved.</p>
-          <a href="contact.html" class="button button-secondary footer-cta">Start a Project</a>
+          <p>Â© Koudak Ouami. All rights reserved. <span class="photo-credit">Photography via <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash</a></span></p>
         </div>
       </footer>
     </div>
 
     <script src="frontend/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   </body>
 </html>
+
+

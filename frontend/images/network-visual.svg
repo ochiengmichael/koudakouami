@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title description">
+  <title id="title">Connected systems illustration</title>
+  <desc id="description">A charcoal network map connecting business systems through orange nodes.</desc>
+  <rect width="1200" height="720" fill="#2d292a"/>
+  <path d="M0 180H1200M0 360H1200M0 540H1200M200 0V720M400 0V720M600 0V720M800 0V720M1000 0V720" stroke="#f5f3ef" stroke-opacity=".06" stroke-width="2"/>
+  <path d="M260 364L450 220L706 300L936 182M450 220L492 480L706 300L842 510M492 480L260 364M706 300L1034 426" fill="none" stroke="#f5f3ef" stroke-opacity=".38" stroke-width="4"/>
+  <path d="M260 364L450 220L706 300L936 182" fill="none" stroke="#F25623" stroke-width="5"/>
+  <rect x="114" y="314" width="292" height="102" rx="16" fill="#171717" stroke="#f5f3ef" stroke-opacity=".22" stroke-width="2"/>
+  <rect x="154" y="344" width="116" height="12" rx="6" fill="#a7a7a7"/>
+  <rect x="154" y="370" width="194" height="17" rx="7" fill="#f5f3ef"/>
+  <rect x="382" y="170" width="252" height="102" rx="16" fill="#171717" stroke="#F25623" stroke-width="3"/>
+  <rect x="422" y="200" width="100" height="12" rx="6" fill="#a7a7a7"/>
+  <rect x="422" y="226" width="172" height="17" rx="7" fill="#f5f3ef"/>
+  <rect x="610" y="250" width="244" height="102" rx="16" fill="#171717" stroke="#f5f3ef" stroke-opacity=".22" stroke-width="2"/>
+  <rect x="650" y="280" width="112" height="12" rx="6" fill="#a7a7a7"/>
+  <rect x="650" y="306" width="162" height="17" rx="7" fill="#F25623"/>
+  <rect x="842" y="132" width="252" height="102" rx="16" fill="#171717" stroke="#f5f3ef" stroke-opacity=".22" stroke-width="2"/>
+  <rect x="882" y="162" width="118" height="12" rx="6" fill="#a7a7a7"/>
+  <rect x="882" y="188" width="168" height="17" rx="7" fill="#f5f3ef"/>
+  <rect x="370" y="430" width="244" height="102" rx="16" fill="#171717" stroke="#f5f3ef" stroke-opacity=".22" stroke-width="2"/>
+  <rect x="410" y="460" width="112" height="12" rx="6" fill="#a7a7a7"/>
+  <rect x="410" y="486" width="162" height="17" rx="7" fill="#f5f3ef"/>
+  <circle cx="260" cy="364" r="13" fill="#F25623"/>
+  <circle cx="450" cy="220" r="13" fill="#F25623"/>
+  <circle cx="706" cy="300" r="13" fill="#F25623"/>
+  <circle cx="936" cy="182" r="13" fill="#F25623"/>
+  <circle cx="492" cy="480" r="13" fill="#F25623"/>
+  <circle cx="842" cy="510" r="13" fill="#F25623"/>
+</svg>

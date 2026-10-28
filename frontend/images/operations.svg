@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title description">
+  <title id="title">Operations dashboard illustration</title>
+  <desc id="description">A charcoal dashboard with orange data bars and a clean interface.</desc>
+  <rect width="1200" height="720" fill="#171717"/>
+  <rect x="94" y="82" width="1012" height="556" rx="18" fill="#2d292a" stroke="#a7a7a7" stroke-opacity=".28" stroke-width="2"/>
+  <rect x="94" y="82" width="1012" height="74" rx="18" fill="#171717"/>
+  <circle cx="132" cy="119" r="8" fill="#F25623"/>
+  <circle cx="160" cy="119" r="8" fill="#a7a7a7"/>
+  <circle cx="188" cy="119" r="8" fill="#a7a7a7"/>
+  <rect x="230" y="111" width="210" height="16" rx="8" fill="#f5f3ef" fill-opacity=".72"/>
+  <rect x="144" y="200" width="238" height="126" rx="12" fill="#171717"/>
+  <rect x="174" y="232" width="100" height="11" rx="5" fill="#a7a7a7"/>
+  <rect x="174" y="263" width="140" height="31" rx="7" fill="#f5f3ef"/>
+  <rect x="410" y="200" width="292" height="126" rx="12" fill="#171717"/>
+  <rect x="440" y="232" width="130" height="11" rx="5" fill="#a7a7a7"/>
+  <rect x="440" y="263" width="188" height="31" rx="7" fill="#f5f3ef"/>
+  <rect x="730" y="200" width="326" height="126" rx="12" fill="#171717"/>
+  <rect x="760" y="232" width="126" height="11" rx="5" fill="#a7a7a7"/>
+  <rect x="760" y="263" width="244" height="31" rx="7" fill="#F25623"/>
+  <rect x="144" y="360" width="912" height="220" rx="12" fill="#171717"/>
+  <path d="M190 520H1010" stroke="#a7a7a7" stroke-opacity=".3" stroke-width="2"/>
+  <path d="M190 472H1010M190 424H1010" stroke="#a7a7a7" stroke-opacity=".16" stroke-width="2"/>
+  <rect x="232" y="469" width="66" height="51" rx="6" fill="#F25623" fill-opacity=".55"/>
+  <rect x="362" y="440" width="66" height="80" rx="6" fill="#F25623" fill-opacity=".7"/>
+  <rect x="492" y="455" width="66" height="65" rx="6" fill="#F25623" fill-opacity=".62"/>
+  <rect x="622" y="402" width="66" height="118" rx="6" fill="#F25623"/>
+  <rect x="752" y="424" width="66" height="96" rx="6" fill="#F25623" fill-opacity=".76"/>
+  <rect x="882" y="382" width="66" height="138" rx="6" fill="#F25623"/>
+</svg>
